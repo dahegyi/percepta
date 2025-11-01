@@ -1,0 +1,522 @@
+/* ============================================
+   Percepta - Shared CSS Styles
+   Design System & Common Components
+   ============================================ */
+
+/* ============================================
+   CSS Custom Properties (Design Tokens)
+   ============================================ */
+
+:root {
+  /* Light theme (default) */
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --success: 142 76% 36%;
+  --success-foreground: 210 40% 98%;
+  --warning: 45 93% 47%;
+  --warning-foreground: 222.2 47.4% 11.2%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 222.2 84% 4.9%;
+  --radius: 1.6rem;
+}
+
+/* Dark theme (explicit & media query) */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]):not([data-theme="high-contrast"]) {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --success: 142 70% 45%;
+    --success-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+[data-theme="dark"] {
+  --background: 222.2 84% 4.9%;
+  --foreground: 210 40% 98%;
+  --card: 222.2 84% 4.9%;
+  --card-foreground: 210 40% 98%;
+  --primary: 210 40% 98%;
+  --primary-foreground: 222.2 47.4% 11.2%;
+  --secondary: 217.2 32.6% 17.5%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217.2 32.6% 17.5%;
+  --muted-foreground: 215 20.2% 65.1%;
+  --accent: 217.2 32.6% 17.5%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 40% 98%;
+  --success: 142 70% 45%;
+  --success-foreground: 210 40% 98%;
+  --border: 217.2 32.6% 17.5%;
+  --input: 217.2 32.6% 17.5%;
+  --ring: 212.7 26.8% 83.9%;
+}
+
+[data-theme="light"] {
+  /* Inherits default root values */
+}
+
+[data-theme="high-contrast"] {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 0%;
+  --card-foreground: 0 0% 100%;
+  --primary: 0 0% 100%;
+  --primary-foreground: 0 0% 0%;
+  --secondary: 0 0% 100%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 0 0% 20%;
+  --muted-foreground: 0 0% 90%;
+  --accent: 0 0% 100%;
+  --accent-foreground: 0 0% 0%;
+  --destructive: 0 100% 50%;
+  --destructive-foreground: 0 0% 100%;
+  --success: 60 100% 50%;
+  --success-foreground: 0 0% 0%;
+  --warning: 60 100% 50%;
+  --warning-foreground: 0 0% 0%;
+  --border: 0 0% 100%;
+  --input: 0 0% 100%;
+  --ring: 0 0% 100%;
+}
+
+/* ============================================
+     Base Styles & Resets
+     ============================================ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  line-height: 1.6;
+}
+
+/* ============================================
+     Accessibility Utilities
+     ============================================ */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* ============================================
+     Button Component System
+     ============================================ */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn[hidden] {
+  display: none;
+}
+
+.btn-primary {
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border: 2px solid hsl(var(--primary));
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: hsl(var(--primary) / 0.9);
+  box-shadow: 0 4px 8px hsl(var(--foreground) / 0.1);
+}
+
+.btn-secondary {
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+  border: 2px solid hsl(var(--border));
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background-color: hsl(var(--secondary) / 0.8);
+  border-color: hsl(var(--ring));
+}
+
+.btn-link {
+  background-color: transparent;
+  color: hsl(var(--primary));
+  border: none;
+  padding: 0.5rem 0;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.btn-link:hover:not(:disabled) {
+  color: hsl(var(--primary) / 0.8);
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: hsl(var(--foreground));
+  flex-shrink: 0;
+}
+
+.btn-icon:hover {
+  background-color: hsl(var(--accent));
+}
+
+[data-theme="high-contrast"] .btn-icon:hover {
+  color: #000000;
+}
+
+.btn-icon:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* ============================================
+     Form Components
+     ============================================ */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+}
+
+/* Custom Select Component (shadcn/ui style) */
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.select-trigger {
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: hsl(var(--background));
+  border: 1px solid hsl(var(--input));
+  border-radius: calc(var(--radius) / 2);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: hsl(var(--foreground));
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.select-trigger:hover {
+  border-color: hsl(var(--ring));
+}
+
+.select-trigger:focus {
+  outline: none;
+  border-color: hsl(var(--ring));
+  box-shadow: 0 0 0 3px hsl(var(--ring) / 0.1);
+}
+
+.select-trigger:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.select-trigger[aria-expanded="true"] {
+  border-color: hsl(var(--ring));
+}
+
+.select-icon {
+  color: hsl(var(--muted-foreground));
+  transition: transform 0.25s ease-in-out;
+  font-size: 0.75rem;
+}
+
+.select-trigger[aria-expanded="true"] .select-icon {
+  transform: rotate(180deg);
+}
+
+.select-menu {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  right: 0;
+  min-width: 8rem;
+  background-color: hsl(var(--background));
+  border: 1px solid hsl(var(--border));
+  border-radius: calc(var(--radius) / 2);
+  list-style: none;
+  margin: 0;
+  padding: 0.0625rem 0.25rem;
+  max-height: 15rem;
+  overflow-y: auto;
+  z-index: 9999;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3),
+    0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(-0.5rem);
+  transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+.select-menu.open-upward {
+  top: auto;
+  bottom: calc(100% + 0.25rem);
+  transform: translateY(0.5rem);
+}
+
+.select-menu.open-upward.open {
+  transform: translateY(0);
+}
+
+.select-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.select-option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0.375rem 0.5rem 0.375rem 2rem;
+  margin: 0.2rem 0;
+  cursor: pointer;
+  border-radius: calc(var(--radius) / 2 - 0.125rem);
+  transition: background-color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  color: hsl(var(--foreground));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  outline: none;
+  user-select: none;
+}
+
+.select-option:hover,
+.select-option:focus {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+}
+
+.select-option[aria-selected="true"] {
+  background-color: hsl(var(--accent));
+  color: hsl(var(--accent-foreground));
+  font-weight: 500;
+}
+
+/* Radio Input */
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-input:focus-visible + * {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+.radio-input:checked + * {
+  border-color: hsl(var(--primary));
+  background-color: hsl(var(--primary) / 0.05);
+  box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
+}
+
+/* Toggle Switch */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(var(--muted));
+  border-radius: 1.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 1.25rem;
+  width: 1.25rem;
+  left: 0.125rem;
+  bottom: 0.125rem;
+  background-color: hsl(var(--background));
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.toggle-input:checked + .toggle-label .toggle-slider {
+  background-color: hsl(var(--primary));
+}
+
+.toggle-input:checked + .toggle-label .toggle-slider::before {
+  transform: translateX(1.5rem);
+}
+
+.toggle-input:focus + .toggle-label .toggle-slider {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 2px;
+}
+
+/* ============================================
+     High Contrast Theme Adjustments
+     ============================================ */
+
+[data-theme="high-contrast"] .select-trigger,
+[data-theme="high-contrast"] .select-option,
+[data-theme="high-contrast"] .btn {
+  font-weight: 600;
+}
+
+[data-theme="high-contrast"] .select-option:hover,
+[data-theme="high-contrast"] .select-option:focus {
+  color: hsl(var(--background));
+}
+
+[data-theme="high-contrast"] .select-option[aria-selected="true"] {
+  background-color: hsl(var(--success));
+  color: hsl(var(--success-foreground));
+}
+
+[data-theme="high-contrast"] .radio-input:checked + * {
+  background-color: hsl(var(--primary) / 0.2);
+  border-color: hsl(var(--success));
+}
+
+/* ============================================
+     Media Queries
+     ============================================ */
+
+/* High Contrast Preference */
+@media (prefers-contrast: high) {
+  .select-trigger,
+  .btn {
+    border-width: 3px;
+  }
+
+  .btn-primary {
+    border-color: hsl(var(--primary));
+  }
+
+  .btn-secondary {
+    border-color: hsl(var(--border));
+  }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

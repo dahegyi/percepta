@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percepta</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body data-page="home">
+    <div class="popup-container" role="main">
+      <div class="page-wrapper">
+        <!-- Home -->
+        <div class="page" data-page-id="home">
+          <div class="header-content-wrapper">
+            <header class="popup-header">
+              <h1 class="popup-title">
+                <img
+                  src="assets/icon-light.svg"
+                  alt=""
+                  class="popup-logo popup-logo-light"
+                  aria-hidden="true"
+                />
+                <img
+                  src="assets/icon-dark.svg"
+                  alt=""
+                  class="popup-logo popup-logo-dark"
+                  aria-hidden="true"
+                />
+                <span data-i18n="popup_title"></span>
+              </h1>
+              <button
+                type="button"
+                class="btn-icon"
+                id="settingsBtn"
+                data-i18n-aria-label="popup_settings_button"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M14.279 2.152C13.909 2 13.439 2 12.5 2s-1.408 0-1.779.152a2 2 0 0 0-1.09 1.083c-.094.223-.13.484-.145.863a1.62 1.62 0 0 1-.796 1.353a1.64 1.64 0 0 1-1.579.008c-.338-.178-.583-.276-.825-.308a2.03 2.03 0 0 0-1.49.396c-.318.242-.553.646-1.022 1.453c-.47.807-.704 1.21-.757 1.605c-.07.526.074 1.058.4 1.479c.148.192.357.353.68.555c.477.297.783.803.783 1.361s-.306 1.064-.782 1.36c-.324.203-.533.364-.682.556a2 2 0 0 0-.399 1.479c.053.394.287.798.757 1.605s.704 1.21 1.022 1.453c.424.323.96.465 1.49.396c.242-.032.487-.13.825-.308a1.64 1.64 0 0 1 1.58.008c.486.28.774.795.795 1.353c.015.38.051.64.145.863c.204.49.596.88 1.09 1.083c.37.152.84.152 1.779.152s1.409 0 1.779-.152a2 2 0 0 0 1.09-1.083c.094-.223.13-.483.145-.863c.02-.558.309-1.074.796-1.353a1.64 1.64 0 0 1 1.579-.008c.338.178.583.276.825.308c.53.07 1.066-.073 1.49-.396c.318-.242.553-.646 1.022-1.453c.47-.807.704-1.21.757-1.605a2 2 0 0 0-.4-1.479c-.148-.192-.357-.353-.68-.555c-.477-.297-.783-.803-.783-1.361s.306-1.064.782-1.36c.324-.203.533-.364.682-.556a2 2 0 0 0 .399-1.479c-.053-.394-.287-.798-.757-1.605s-.704-1.21-1.022-1.453a2.03 2.03 0 0 0-1.49-.396c-.242.032-.487.13-.825.308a1.64 1.64 0 0 1-1.58-.008a1.62 1.62 0 0 1-.795-1.353c-.015-.38-.051-.64-.145-.863a2 2 0 0 0-1.09-1.083M12.5 15c1.67 0 3.023-1.343 3.023-3S14.169 9 12.5 9s-3.023 1.343-3.023 3s1.354 3 3.023 3"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </header>
+
+            <div class="main-content">
+              <p class="ai-unavailable-notice" id="aiUnavailableNotice" hidden>
+                <span data-i18n="ai_unavailable"></span>
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                id="describeBtn"
+                data-i18n="popup_describe_button"
+              ></button>
+            </div>
+          </div>
+
+          <section
+            class="history-section"
+            aria-labelledby="recentActivityTitle"
+          >
+            <h2
+              class="section-title"
+              id="recentActivityTitle"
+              data-i18n="popup_recent_activity"
+            ></h2>
+            <ul class="history-list" id="historyList" role="list"></ul>
+            <button
+              type="button"
+              class="btn btn-secondary btn-small"
+              id="showMoreBtn"
+              hidden
+              data-i18n="popup_show_more"
+            ></button>
+            <p
+              class="empty-state"
+              id="emptyState"
+              hidden
+              data-i18n="popup_no_activity"
+            ></p>
+            <button
+              type="button"
+              class="btn btn-link btn-small"
+              id="clearHistoryBtn"
+              data-i18n="popup_clear_history"
+            ></button>
+          </section>
+        </div>
+
+        <!-- Settings -->
+        <div class="page" data-page-id="settings" hidden>
+          <header class="popup-header">
+            <button
+              type="button"
+              class="btn-icon"
+              id="backBtn"
+              data-i18n-aria-label="popup_back_button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <h1 class="popup-title" data-i18n="popup_settings_title"></h1>
+          </header>
+
+          <div class="settings-content">
+            <div class="form-group">
+              <label
+                class="form-label"
+                id="detailSelectLabel"
+                data-i18n="popup_detail_label"
+              ></label>
+              <div class="custom-select">
+                <button
+                  type="button"
+                  id="detailSelectTrigger"
+                  class="select-trigger"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-labelledby="detailSelectLabel detailSelectValue"
+                >
+                  <span id="detailSelectValue"></span>
+                  <span class="select-icon" aria-hidden="true">▼</span>
+                </button>
+                <ul id="detailSelectMenu" class="select-menu" role="listbox">
+                  <li
+                    role="option"
+                    data-value="short"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_detail_brief"
+                  ></li>
+                  <li
+                    role="option"
+                    data-value="medium"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_detail_normal"
+                  ></li>
+                  <li
+                    role="option"
+                    data-value="long"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_detail_detailed"
+                  ></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label
+                class="form-label"
+                id="themeSelectLabel"
+                data-i18n="popup_theme_label"
+              ></label>
+              <div class="custom-select">
+                <button
+                  type="button"
+                  id="themeSelectTrigger"
+                  class="select-trigger"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-labelledby="themeSelectLabel themeSelectValue"
+                >
+                  <span id="themeSelectValue"></span>
+                  <span class="select-icon" aria-hidden="true">▼</span>
+                </button>
+                <ul id="themeSelectMenu" class="select-menu" role="listbox">
+                  <li
+                    role="option"
+                    data-value="auto"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_theme_auto"
+                  ></li>
+                  <li
+                    role="option"
+                    data-value="light"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_theme_light"
+                  ></li>
+                  <li
+                    role="option"
+                    data-value="dark"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_theme_dark"
+                  ></li>
+                  <li
+                    role="option"
+                    data-value="high-contrast"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_theme_high_contrast"
+                  ></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label
+                class="form-label"
+                id="fontSizeSelectLabel"
+                data-i18n="popup_font_size_label"
+              ></label>
+              <div class="custom-select">
+                <button
+                  type="button"
+                  id="fontSizeSelectTrigger"
+                  class="select-trigger"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-labelledby="fontSizeSelectLabel fontSizeSelectValue"
+                >
+                  <span id="fontSizeSelectValue"></span>
+                  <span class="select-icon" aria-hidden="true">▼</span>
+                </button>
+                <ul id="fontSizeSelectMenu" class="select-menu" role="listbox">
+                  <li
+                    role="option"
+                    data-value="smaller"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_font_size_smaller"
+                  ></li>
+                  <li
+                    role="option"
+                    data-value="small"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_font_size_small"
+                  ></li>
+                  <li
+                    role="option"
+                    data-value="normal"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_font_size_normal"
+                  ></li>
+                  <li
+                    role="option"
+                    data-value="large"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_font_size_large"
+                  ></li>
+                  <li
+                    role="option"
+                    data-value="larger"
+                    class="select-option"
+                    tabindex="-1"
+                    data-i18n="popup_font_size_larger"
+                  ></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label
+                class="form-label"
+                id="languageSelectLabel"
+                data-i18n="popup_language_label"
+              ></label>
+              <div class="custom-select">
+                <button
+                  type="button"
+                  id="languageSelectTrigger"
+                  class="select-trigger"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-labelledby="languageSelectLabel languageSelectValue"
+                >
+                  <span id="languageSelectValue"></span>
+                  <span class="select-icon" aria-hidden="true">▼</span>
+                </button>
+                <ul id="languageSelectMenu" class="select-menu" role="listbox">
+                  <li
+                    role="option"
+                    data-value="en"
+                    class="select-option"
+                    tabindex="-1"
+                  >
+                    English
+                  </li>
+                  <li
+                    role="option"
+                    data-value="es"
+                    class="select-option"
+                    tabindex="-1"
+                  >
+                    Español
+                  </li>
+                  <li
+                    role="option"
+                    data-value="ja"
+                    class="select-option"
+                    tabindex="-1"
+                  >
+                    日本語
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="btn btn-link"
+              id="openSetupBtn"
+              data-i18n="popup_open_setup_wizard"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

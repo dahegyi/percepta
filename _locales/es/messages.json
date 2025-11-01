@@ -1,0 +1,259 @@
+{
+  "popup_title": {
+    "message": "Percepta"
+  },
+  "popup_settings_button": {
+    "message": "Configuración"
+  },
+  "popup_back_button": {
+    "message": "Volver al inicio"
+  },
+  "popup_settings_title": {
+    "message": "Configuración"
+  },
+  "popup_describe_button": {
+    "message": "Describir página"
+  },
+  "popup_recent_activity": {
+    "message": "Actividad Reciente"
+  },
+  "popup_no_activity": {
+    "message": "Aún no hay actividad."
+  },
+  "popup_clear_history": {
+    "message": "Borrar historial"
+  },
+  "popup_history_cleared": {
+    "message": "Historial borrado."
+  },
+  "popup_language_label": {
+    "message": "Idioma"
+  },
+  "popup_theme_label": {
+    "message": "Tema"
+  },
+  "popup_theme_auto": {
+    "message": "Automático (Sistema)"
+  },
+  "popup_theme_light": {
+    "message": "Claro"
+  },
+  "popup_theme_dark": {
+    "message": "Oscuro"
+  },
+  "popup_theme_high_contrast": {
+    "message": "Alto Contraste"
+  },
+  "popup_detail_label": {
+    "message": "Nivel de Detalle"
+  },
+  "popup_detail_brief": {
+    "message": "Breve"
+  },
+  "popup_detail_normal": {
+    "message": "Normal"
+  },
+  "popup_detail_detailed": {
+    "message": "Detallado"
+  },
+  "popup_font_size_label": {
+    "message": "Tamaño de Fuente"
+  },
+  "popup_font_size_smaller": {
+    "message": "Más pequeño"
+  },
+  "popup_font_size_small": {
+    "message": "Pequeño"
+  },
+  "popup_font_size_normal": {
+    "message": "Normal"
+  },
+  "popup_font_size_large": {
+    "message": "Grande"
+  },
+  "popup_font_size_larger": {
+    "message": "Más grande"
+  },
+  "popup_content_mode_label": {
+    "message": "Modo de Contenido"
+  },
+  "popup_content_mode_audio": {
+    "message": "Audio"
+  },
+  "popup_content_mode_visual": {
+    "message": "Visual"
+  },
+  "popup_content_mode_both": {
+    "message": "Ambos"
+  },
+  "popup_preferences_saved": {
+    "message": "Preferencias guardadas."
+  },
+  "popup_open_setup_wizard": {
+    "message": "Abrir asistente de configuración"
+  },
+  "popup_show_more": {
+    "message": "Mostrar más"
+  },
+  "popup_time_just_now": {
+    "message": "justo ahora"
+  },
+  "popup_time_minute_ago": {
+    "message": "hace 1 minuto"
+  },
+  "popup_time_minutes_ago": {
+    "message": "hace $COUNT$ minutos",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_time_hour_ago": {
+    "message": "hace 1 hora"
+  },
+  "popup_time_hours_ago": {
+    "message": "hace $COUNT$ horas",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_time_day_ago": {
+    "message": "hace 1 día"
+  },
+  "popup_time_days_ago": {
+    "message": "hace $COUNT$ días",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "archived_conversation_notice": {
+    "message": "Esta es una conversación archivada. Solo lectura."
+  },
+  "error_language_model_unavailable": {
+    "message": "El modelo de lenguaje de IA no está disponible. Asegúrate de que tu navegador sea compatible con la API Prompt."
+  },
+  "error_language_model_failed": {
+    "message": "No se pudo crear el modelo de lenguaje. Inténtalo de nuevo."
+  },
+  "error_quota_exceeded": {
+    "message": "Cuota de IA excedida. Espera un momento e inténtalo nuevamente."
+  },
+  "error_session_not_found": {
+    "message": "Sesión no encontrada. Inicia un nuevo análisis."
+  },
+  "error_storage_failed": {
+    "message": "Error al guardar los datos. Es posible que tu información no se haya guardado."
+  },
+  "error_generic": {
+    "message": "Ocurrió un error. Inténtalo nuevamente."
+  },
+  "error_network": {
+    "message": "Error de red. Verifica tu conexión a internet."
+  },
+  "error_image_processing": {
+    "message": "No se pudo procesar la imagen. Inténtalo nuevamente."
+  },
+  "ai_unavailable": {
+    "message": "Modelo de IA no disponible"
+  },
+  "sidepanel_aria_label": {
+    "message": "Asistente de IA de Percepta"
+  },
+  "sidepanel_close_button": {
+    "message": "Cerrar"
+  },
+  "sidepanel_conversation_label": {
+    "message": "Conversación"
+  },
+  "sidepanel_input_placeholder": {
+    "message": "Haz una pregunta de seguimiento..."
+  },
+  "sidepanel_input_placeholder_no_conversation": {
+    "message": "Pregunta sobre esta página..."
+  },
+  "sidepanel_input_label": {
+    "message": "Pregunta de seguimiento"
+  },
+  "sidepanel_send_button": {
+    "message": "Enviar mensaje"
+  },
+  "shortcuts_input_placeholder": {
+    "message": "Presiona teclas..."
+  },
+  "aria_response_streaming": {
+    "message": "Respuesta de IA en transmisión"
+  },
+  "aria_followup_streaming": {
+    "message": "Respuesta de seguimiento de IA en transmisión"
+  },
+  "aria_response_complete": {
+    "message": "Respuesta completa"
+  },
+  "aria_response_complete_words": {
+    "message": "Respuesta completa. $wordCount$ palabras.",
+    "placeholders": {
+      "wordCount": {
+        "content": "$1"
+      }
+    }
+  },
+  "aria_response_read": {
+    "message": "Respuesta de IA - usa las teclas de flecha para leer"
+  },
+  "aria_action_buttons_singular": {
+    "message": "1 pregunta de seguimiento disponible"
+  },
+  "aria_action_buttons_plural": {
+    "message": "$count$ preguntas de seguimiento disponibles",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "aria_action_activated": {
+    "message": "Preguntando: $action$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "aria_streaming_snippet": {
+    "message": "...$snippet$",
+    "placeholders": {
+      "snippet": {
+        "content": "$1"
+      }
+    }
+  },
+  "wiki_no_summary_available": {
+    "message": "No hay resumen disponible."
+  },
+  "idle_prompt_1": {
+    "message": "Puedo decirte qué muestra realmente esa imagen."
+  },
+  "idle_prompt_2": {
+    "message": "Intenta preguntarme qué está pasando en esta pestaña."
+  },
+  "idle_prompt_3": {
+    "message": "Noto cosas que quizás hayas pasado por alto."
+  },
+  "idle_prompt_4": {
+    "message": "¡Puedo describir esta página mejor de lo que piensas!"
+  },
+  "idle_prompt_5": {
+    "message": "¿Tienes curiosidad por lo que estás viendo? Puedo ayudarte."
+  },
+  "idle_prompt_6": {
+    "message": "Yo leo la web para que tú no tengas que hacerlo."
+  },
+  "context_menu_describe_image": {
+    "message": "Describir Imagen con Percepta"
+  }
+}

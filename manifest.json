@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Percepta",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage",
+    "tts",
+    "scripting",
+    "offscreen",
+    "sidePanel",
+    "unlimitedStorage"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Percepta",
+    "default_icon": {
+      "16": "assets/icon16.png",
+      "32": "assets/icon32.png",
+      "48": "assets/icon48.png",
+      "128": "assets/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/sidepanel.html"
+  },
+  "options_page": "options/setup.html",
+  "default_locale": "en",
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/icon-light.svg"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "resources": ["assets/icon-dark.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

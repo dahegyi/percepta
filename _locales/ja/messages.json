@@ -1,0 +1,259 @@
+{
+  "popup_title": {
+    "message": "Percepta"
+  },
+  "popup_settings_button": {
+    "message": "設定"
+  },
+  "popup_back_button": {
+    "message": "ホームに戻る"
+  },
+  "popup_settings_title": {
+    "message": "設定"
+  },
+  "popup_describe_button": {
+    "message": "ページを説明"
+  },
+  "popup_recent_activity": {
+    "message": "最近のアクティビティ"
+  },
+  "popup_no_activity": {
+    "message": "アクティビティはまだありません"
+  },
+  "popup_clear_history": {
+    "message": "履歴を削除"
+  },
+  "popup_history_cleared": {
+    "message": "履歴を削除しました"
+  },
+  "popup_language_label": {
+    "message": "言語"
+  },
+  "popup_theme_label": {
+    "message": "テーマ"
+  },
+  "popup_theme_auto": {
+    "message": "自動（システム設定）"
+  },
+  "popup_theme_light": {
+    "message": "ライト"
+  },
+  "popup_theme_dark": {
+    "message": "ダーク"
+  },
+  "popup_theme_high_contrast": {
+    "message": "ハイコントラスト"
+  },
+  "popup_detail_label": {
+    "message": "説明の詳細度"
+  },
+  "popup_detail_brief": {
+    "message": "簡潔"
+  },
+  "popup_detail_normal": {
+    "message": "標準"
+  },
+  "popup_detail_detailed": {
+    "message": "詳細"
+  },
+  "popup_font_size_label": {
+    "message": "文字サイズ"
+  },
+  "popup_font_size_smaller": {
+    "message": "極小"
+  },
+  "popup_font_size_small": {
+    "message": "小"
+  },
+  "popup_font_size_normal": {
+    "message": "標準"
+  },
+  "popup_font_size_large": {
+    "message": "大"
+  },
+  "popup_font_size_larger": {
+    "message": "特大"
+  },
+  "popup_content_mode_label": {
+    "message": "コンテンツモード"
+  },
+  "popup_content_mode_audio": {
+    "message": "音声のみ"
+  },
+  "popup_content_mode_visual": {
+    "message": "ビジュアルのみ"
+  },
+  "popup_content_mode_both": {
+    "message": "両方表示"
+  },
+  "popup_preferences_saved": {
+    "message": "設定を保存しました"
+  },
+  "popup_open_setup_wizard": {
+    "message": "セットアップウィザードを開く"
+  },
+  "popup_show_more": {
+    "message": "詳細を表示"
+  },
+  "popup_time_just_now": {
+    "message": "たった今"
+  },
+  "popup_time_minute_ago": {
+    "message": "1分前"
+  },
+  "popup_time_minutes_ago": {
+    "message": "$COUNT$分前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_time_hour_ago": {
+    "message": "1時間前"
+  },
+  "popup_time_hours_ago": {
+    "message": "$COUNT$時間前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_time_day_ago": {
+    "message": "1日前"
+  },
+  "popup_time_days_ago": {
+    "message": "$COUNT$日前",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "archived_conversation_notice": {
+    "message": "この会話はアーカイブされています（閲覧のみ）"
+  },
+  "error_language_model_unavailable": {
+    "message": "AI言語モデルが利用できません。ブラウザがPrompt APIに対応していることを確認してください。"
+  },
+  "error_language_model_failed": {
+    "message": "言語モデルの作成に失敗しました。もう一度お試しください。"
+  },
+  "error_quota_exceeded": {
+    "message": "AIの利用上限を超えました。しばらくしてから再試行してください。"
+  },
+  "error_session_not_found": {
+    "message": "セッションが見つかりません。新しい解析を開始してください。"
+  },
+  "error_storage_failed": {
+    "message": "データの保存に失敗しました。"
+  },
+  "error_generic": {
+    "message": "エラーが発生しました。もう一度お試しください。"
+  },
+  "error_network": {
+    "message": "ネットワークエラーが発生しました。接続を確認してください。"
+  },
+  "error_image_processing": {
+    "message": "画像の処理に失敗しました。再試行してください。"
+  },
+  "ai_unavailable": {
+    "message": "AIモデルが利用できません"
+  },
+  "sidepanel_aria_label": {
+    "message": "Percepta AIアシスタント"
+  },
+  "sidepanel_close_button": {
+    "message": "閉じる"
+  },
+  "sidepanel_conversation_label": {
+    "message": "会話"
+  },
+  "sidepanel_input_placeholder": {
+    "message": "フォローアップの質問を入力..."
+  },
+  "sidepanel_input_placeholder_no_conversation": {
+    "message": "このページについて質問する..."
+  },
+  "sidepanel_input_label": {
+    "message": "フォローアップ質問"
+  },
+  "sidepanel_send_button": {
+    "message": "送信"
+  },
+  "shortcuts_input_placeholder": {
+    "message": "キーを押してください..."
+  },
+  "aria_response_streaming": {
+    "message": "AI応答をストリーミング中"
+  },
+  "aria_followup_streaming": {
+    "message": "AIフォローアップ応答をストリーミング中"
+  },
+  "aria_response_complete": {
+    "message": "応答完了"
+  },
+  "aria_response_complete_words": {
+    "message": "応答完了。$wordCount$語。",
+    "placeholders": {
+      "wordCount": {
+        "content": "$1"
+      }
+    }
+  },
+  "aria_response_read": {
+    "message": "AI応答 - 矢印キーで読む"
+  },
+  "aria_action_buttons_singular": {
+    "message": "フォローアップ質問が1つ利用可能"
+  },
+  "aria_action_buttons_plural": {
+    "message": "$count$個のフォローアップ質問が利用可能",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "aria_action_activated": {
+    "message": "質問中: $action$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "aria_streaming_snippet": {
+    "message": "...$snippet$",
+    "placeholders": {
+      "snippet": {
+        "content": "$1"
+      }
+    }
+  },
+  "wiki_no_summary_available": {
+    "message": "要約が利用できません。"
+  },
+  "idle_prompt_1": {
+    "message": "その画像が実際に何を示しているかお伝えできます。"
+  },
+  "idle_prompt_2": {
+    "message": "このタブで何が起こっているか聞いてみてください。"
+  },
+  "idle_prompt_3": {
+    "message": "見落としているかもしれないことに気づいています。"
+  },
+  "idle_prompt_4": {
+    "message": "このページをあなたが思っている以上に詳しく説明できます！"
+  },
+  "idle_prompt_5": {
+    "message": "何が見えているか気になりますか？お手伝いできます。"
+  },
+  "idle_prompt_6": {
+    "message": "あなたの代わりにウェブを読みます。"
+  },
+  "context_menu_describe_image": {
+    "message": "Perceptaで画像を説明"
+  }
+}

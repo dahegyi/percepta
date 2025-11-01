@@ -1,0 +1,104 @@
+{
+  "stepDetailLabel": { "message": "Detalle" },
+  "stepAccessibilityLabel": { "message": "Accesibilidad" },
+  "stepThemeLabel": { "message": "Tema" },
+  "stepShortcutsLabel": { "message": "Atajos" },
+  "selectLanguage": { "message": "Selecciona un idioma..." },
+  "stepDetailTitle": { "message": "Nivel de Detalle" },
+  "stepDetailDescription": {
+    "message": "¿Qué nivel de detalle quieres en las descripciones de Percepta?"
+  },
+  "detailShortTitle": { "message": "Breve" },
+  "detailShortDesc": { "message": "Resumen en una línea" },
+  "detailMediumTitle": { "message": "Normal" },
+  "detailMediumDesc": { "message": "Nivel de detalle equilibrado" },
+  "detailLongTitle": { "message": "Detallado" },
+  "detailLongDesc": { "message": "Explicación visual en profundidad" },
+  "stepThemeTitle": { "message": "Preferencia de Tema" },
+  "stepThemeDescription": {
+    "message": "Elige la apariencia que prefieras."
+  },
+  "themeDividerText": { "message": "o" },
+  "themeAutoTitle": { "message": "Usar configuración del dispositivo" },
+  "themeLightTitle": { "message": "Claro" },
+  "themeLightDesc": { "message": "Fondo claro, texto oscuro" },
+  "themeDarkTitle": { "message": "Oscuro" },
+  "themeDarkDesc": { "message": "Fondo oscuro, texto claro" },
+  "themeHighContrastTitle": { "message": "Alto Contraste" },
+  "themeHighContrastDesc": {
+    "message": "Máximo contraste para mejor visibilidad"
+  },
+  "stepAccessibilityTitle": { "message": "Opciones de Accesibilidad" },
+  "stepAccessibilityDescription": {
+    "message": "Elige un tamaño de fuente que te resulte cómodo."
+  },
+  "fontSizeSmallerLabel": { "message": "Más pequeño" },
+  "fontSizeSmallLabel": { "message": "Pequeño" },
+  "fontSizeNormalLabel": { "message": "Normal" },
+  "fontSizeLargeLabel": { "message": "Grande" },
+  "fontSizeLargerLabel": { "message": "Más grande" },
+  "stepShortcutsTitle": { "message": "Atajos de Teclado" },
+  "stepShortcutsDescription": {
+    "message": "Usa el atajo de teclado para activar rápidamente Percepta."
+  },
+  "shortcutActivateLabel": { "message": "Activar Extensión" },
+  "shortcutChangeInfo": {
+    "message": "Para cambiar este atajo, visita:"
+  },
+  "continue": { "message": "Continuar" },
+  "back": { "message": "Atrás" },
+  "finish": { "message": "Finalizar" },
+  "setupCompleteAnnouncement": {
+    "message": "¡Configuración completa! Percepta está listo para usarse. Todas tus preferencias han sido guardadas."
+  },
+  "welcomeTitle": { "message": "Bienvenido a Percepta" },
+  "welcomeTagline": { "message": "Vamos a configurarte." },
+  "welcomeLanguageLabel": { "message": "Elige tu idioma" },
+  "welcomeLogoAlt": { "message": "Logotipo de Percepta" },
+
+  "aiCheckingTitle": { "message": "Comprobando disponibilidad de la IA" },
+  "aiCheckingDesc": { "message": "Por favor, espera..." },
+  "aiAvailableTitle": { "message": "Listo para comenzar" },
+  "aiAvailableDesc": {
+    "message": "El modelo de IA está configurado. Empecemos a personalizar tu experiencia."
+  },
+  "aiDownloadingTitle": { "message": "Descargando modelo" },
+  "aiDownloadingDesc": { "message": "Esto puede tardar unos minutos." },
+  "aiUnavailableTitle": { "message": "Modelo no disponible" },
+  "aiUnavailableDesc": {
+    "message": "Percepta solo funciona con Gemini Nano sin conexión en Chrome 138 o posterior."
+  },
+  "completionTitle": { "message": "Percepta está listo." },
+  "completionMessage": {
+    "message": "Puedes cambiar tus ajustes en cualquier momento desde el menú de la extensión."
+  },
+  "launchPercepta": { "message": "Iniciar Percepta" },
+  "startSetupAgain": { "message": "Reiniciar configuración" },
+  "ariaLabelContinueToDetail": { "message": "Continuar a nivel de detalle" },
+  "ariaLabelContinueToTheme": { "message": "Continuar a selección de tema" },
+  "ariaLabelContinueToAccessibility": {
+    "message": "Continuar a opciones de accesibilidad"
+  },
+  "ariaLabelContinueToShortcuts": {
+    "message": "Continuar a atajos de teclado"
+  },
+  "ariaLabelBackToDetail": { "message": "Volver a nivel de detalle" },
+  "ariaLabelBackToTheme": { "message": "Volver a selección de tema" },
+  "ariaLabelBackToAccessibility": {
+    "message": "Volver a opciones de accesibilidad"
+  },
+  "ariaLabelFinishSetup": { "message": "Finalizar configuración" },
+  "ariaLabelFontSizeSelection": { "message": "Selección de tamaño de fuente" },
+  "ariaLabelContentPreference": { "message": "Preferencia de contenido" },
+  "ariaLabelSetupProgress": { "message": "Progreso de configuración" },
+  "ariaLabelStepDetail": { "message": "Paso 1: Detalle" },
+  "ariaLabelStepTheme": { "message": "Paso 2: Tema" },
+  "ariaLabelStepAccessibility": { "message": "Paso 3: Accesibilidad" },
+  "ariaLabelStepShortcuts": { "message": "Paso 4: Atajos" },
+  "stepTitleDetail": { "message": "Paso 1 de 4: Nivel de Detalle" },
+  "stepTitleTheme": { "message": "Paso 2 de 4: Preferencia de Tema" },
+  "stepTitleAccessibility": {
+    "message": "Paso 3 de 4: Opciones de Accesibilidad"
+  },
+  "stepTitleShortcuts": { "message": "Paso 4 de 4: Atajos de Teclado" }
+}

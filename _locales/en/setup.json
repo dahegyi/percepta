@@ -1,0 +1,102 @@
+{
+  "stepDetailLabel": { "message": "Detail" },
+  "stepAccessibilityLabel": { "message": "Accessibility" },
+  "stepThemeLabel": { "message": "Theme" },
+  "stepShortcutsLabel": { "message": "Shortcuts" },
+  "selectLanguage": { "message": "Select a language..." },
+  "stepDetailTitle": { "message": "Description Detail" },
+  "stepDetailDescription": {
+    "message": "How detailed do you want Percepta's descriptions to be?"
+  },
+  "detailShortTitle": { "message": "Brief" },
+  "detailShortDesc": { "message": "One-line summary" },
+  "detailMediumTitle": { "message": "Normal" },
+  "detailMediumDesc": { "message": "Balanced detail" },
+  "detailLongTitle": { "message": "Detailed" },
+  "detailLongDesc": { "message": "In-depth visual explanation" },
+  "stepThemeTitle": { "message": "Theme Preference" },
+  "stepThemeDescription": {
+    "message": "Choose your preferred appearance."
+  },
+  "themeDividerText": { "message": "or" },
+  "themeAutoTitle": { "message": "Use device settings" },
+  "themeLightTitle": { "message": "Light" },
+  "themeLightDesc": { "message": "Bright background, dark text" },
+  "themeDarkTitle": { "message": "Dark" },
+  "themeDarkDesc": { "message": "Dark background, light text" },
+  "themeHighContrastTitle": { "message": "High Contrast" },
+  "themeHighContrastDesc": {
+    "message": "Maximum contrast for better visibility"
+  },
+  "stepAccessibilityTitle": { "message": "Accessibility Options" },
+  "stepAccessibilityDescription": {
+    "message": "Choose a font size that's comfortable for you."
+  },
+  "fontSizeSmallerLabel": { "message": "Smaller" },
+  "fontSizeSmallLabel": { "message": "Small" },
+  "fontSizeNormalLabel": { "message": "Normal" },
+  "fontSizeLargeLabel": { "message": "Large" },
+  "fontSizeLargerLabel": { "message": "Larger" },
+  "stepShortcutsTitle": { "message": "Keyboard Shortcuts" },
+  "stepShortcutsDescription": {
+    "message": "Use the keyboard shortcut to quickly activate Percepta."
+  },
+  "shortcutActivateLabel": { "message": "Activate Extension" },
+  "shortcutChangeInfo": {
+    "message": "To change this shortcut, visit:"
+  },
+  "continue": { "message": "Continue" },
+  "back": { "message": "Back" },
+  "finish": { "message": "Finish" },
+  "setupCompleteAnnouncement": {
+    "message": "Setup complete! Percepta is ready to use. All your preferences have been saved."
+  },
+  "welcomeTitle": { "message": "Welcome to Percepta" },
+  "welcomeTagline": { "message": "Let's get you set up." },
+  "welcomeLanguageLabel": { "message": "Choose your language" },
+  "welcomeLogoAlt": { "message": "Percepta Logo" },
+
+  "aiCheckingTitle": { "message": "Checking AI availability" },
+  "aiCheckingDesc": { "message": "Please hold on..." },
+  "aiAvailableTitle": { "message": "Ready to begin" },
+  "aiAvailableDesc": {
+    "message": "The AI model is set up — let’s start personalizing your experience."
+  },
+  "aiDownloadingTitle": { "message": "Downloading model" },
+  "aiDownloadingDesc": { "message": "This may take a few minutes." },
+  "aiUnavailableTitle": { "message": "Model not available" },
+  "aiUnavailableDesc": {
+    "message": "Percepta works only with the offline Gemini Nano in Chrome 138 or later."
+  },
+  "completionTitle": { "message": "Percepta is ready." },
+  "completionMessage": {
+    "message": "You can change your settings anytime in the extension menu."
+  },
+  "launchPercepta": { "message": "Launch Percepta" },
+  "startSetupAgain": { "message": "Start setup again" },
+  "ariaLabelContinueToDetail": { "message": "Continue to description detail" },
+  "ariaLabelContinueToTheme": { "message": "Continue to theme selection" },
+  "ariaLabelContinueToAccessibility": {
+    "message": "Continue to accessibility options"
+  },
+  "ariaLabelContinueToShortcuts": {
+    "message": "Continue to keyboard shortcuts"
+  },
+  "ariaLabelBackToDetail": { "message": "Back to description detail" },
+  "ariaLabelBackToTheme": { "message": "Back to theme selection" },
+  "ariaLabelBackToAccessibility": {
+    "message": "Back to accessibility options"
+  },
+  "ariaLabelFinishSetup": { "message": "Finish setup" },
+  "ariaLabelFontSizeSelection": { "message": "Font size selection" },
+  "ariaLabelContentPreference": { "message": "Content experience preference" },
+  "ariaLabelSetupProgress": { "message": "Setup progress" },
+  "ariaLabelStepDetail": { "message": "Step 1: Detail" },
+  "ariaLabelStepTheme": { "message": "Step 2: Theme" },
+  "ariaLabelStepAccessibility": { "message": "Step 3: Accessibility" },
+  "ariaLabelStepShortcuts": { "message": "Step 4: Shortcuts" },
+  "stepTitleDetail": { "message": "Step 1 of 4: Description Detail" },
+  "stepTitleTheme": { "message": "Step 2 of 4: Theme Preference" },
+  "stepTitleAccessibility": { "message": "Step 3 of 4: Accessibility Options" },
+  "stepTitleShortcuts": { "message": "Step 4 of 4: Keyboard Shortcuts" }
+}

@@ -1,0 +1,259 @@
+{
+  "popup_title": {
+    "message": "Percepta"
+  },
+  "popup_settings_button": {
+    "message": "Settings"
+  },
+  "popup_back_button": {
+    "message": "Back to home"
+  },
+  "popup_settings_title": {
+    "message": "Settings"
+  },
+  "popup_describe_button": {
+    "message": "Describe page"
+  },
+  "popup_recent_activity": {
+    "message": "Recent Activity"
+  },
+  "popup_no_activity": {
+    "message": "No activity yet."
+  },
+  "popup_clear_history": {
+    "message": "Clear History"
+  },
+  "popup_history_cleared": {
+    "message": "History cleared."
+  },
+  "popup_language_label": {
+    "message": "Language"
+  },
+  "popup_theme_label": {
+    "message": "Theme"
+  },
+  "popup_theme_auto": {
+    "message": "Auto (System)"
+  },
+  "popup_theme_light": {
+    "message": "Light"
+  },
+  "popup_theme_dark": {
+    "message": "Dark"
+  },
+  "popup_theme_high_contrast": {
+    "message": "High Contrast"
+  },
+  "popup_detail_label": {
+    "message": "Description Detail"
+  },
+  "popup_detail_brief": {
+    "message": "Brief"
+  },
+  "popup_detail_normal": {
+    "message": "Normal"
+  },
+  "popup_detail_detailed": {
+    "message": "Detailed"
+  },
+  "popup_font_size_label": {
+    "message": "Font Size"
+  },
+  "popup_font_size_smaller": {
+    "message": "Smaller"
+  },
+  "popup_font_size_small": {
+    "message": "Small"
+  },
+  "popup_font_size_normal": {
+    "message": "Normal"
+  },
+  "popup_font_size_large": {
+    "message": "Large"
+  },
+  "popup_font_size_larger": {
+    "message": "Larger"
+  },
+  "popup_content_mode_label": {
+    "message": "Content Mode"
+  },
+  "popup_content_mode_audio": {
+    "message": "Audio"
+  },
+  "popup_content_mode_visual": {
+    "message": "Visual"
+  },
+  "popup_content_mode_both": {
+    "message": "Both"
+  },
+  "popup_preferences_saved": {
+    "message": "Preferences saved."
+  },
+  "popup_open_setup_wizard": {
+    "message": "Open setup wizard"
+  },
+  "popup_show_more": {
+    "message": "Show more"
+  },
+  "popup_time_just_now": {
+    "message": "just now"
+  },
+  "popup_time_minute_ago": {
+    "message": "1 minute ago"
+  },
+  "popup_time_minutes_ago": {
+    "message": "$COUNT$ minutes ago",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_time_hour_ago": {
+    "message": "1 hour ago"
+  },
+  "popup_time_hours_ago": {
+    "message": "$COUNT$ hours ago",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "popup_time_day_ago": {
+    "message": "1 day ago"
+  },
+  "popup_time_days_ago": {
+    "message": "$COUNT$ days ago",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "archived_conversation_notice": {
+    "message": "This is an archived conversation. View only."
+  },
+  "error_language_model_unavailable": {
+    "message": "AI language model is not available. Please ensure your browser supports the Prompt API."
+  },
+  "error_language_model_failed": {
+    "message": "Failed to create language model. Please try again."
+  },
+  "error_quota_exceeded": {
+    "message": "AI quota exceeded. Please wait and try again later."
+  },
+  "error_session_not_found": {
+    "message": "Session not found. Please start a new analysis."
+  },
+  "error_storage_failed": {
+    "message": "Storage operation failed. Your data may not be saved."
+  },
+  "error_generic": {
+    "message": "An error occurred. Please try again."
+  },
+  "error_network": {
+    "message": "Network error occurred. Please check your connection."
+  },
+  "error_image_processing": {
+    "message": "Failed to process image. Please try again."
+  },
+  "ai_unavailable": {
+    "message": "AI model unavailable"
+  },
+  "sidepanel_aria_label": {
+    "message": "Percepta AI Assistant"
+  },
+  "sidepanel_close_button": {
+    "message": "Close"
+  },
+  "sidepanel_conversation_label": {
+    "message": "Conversation"
+  },
+  "sidepanel_input_placeholder": {
+    "message": "Ask a follow-up question..."
+  },
+  "sidepanel_input_placeholder_no_conversation": {
+    "message": "Ask about this page..."
+  },
+  "sidepanel_input_label": {
+    "message": "Follow-up question"
+  },
+  "sidepanel_send_button": {
+    "message": "Send message"
+  },
+  "shortcuts_input_placeholder": {
+    "message": "Press keys..."
+  },
+  "aria_response_streaming": {
+    "message": "AI response streaming"
+  },
+  "aria_followup_streaming": {
+    "message": "AI follow-up response streaming"
+  },
+  "aria_response_complete": {
+    "message": "Response complete"
+  },
+  "aria_response_complete_words": {
+    "message": "Response complete. $wordCount$ words.",
+    "placeholders": {
+      "wordCount": {
+        "content": "$1"
+      }
+    }
+  },
+  "aria_response_read": {
+    "message": "AI response - use arrow keys to read"
+  },
+  "aria_action_buttons_singular": {
+    "message": "1 follow-up question available"
+  },
+  "aria_action_buttons_plural": {
+    "message": "$count$ follow-up questions available",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "aria_action_activated": {
+    "message": "Asking: $action$",
+    "placeholders": {
+      "action": {
+        "content": "$1"
+      }
+    }
+  },
+  "aria_streaming_snippet": {
+    "message": "...$snippet$",
+    "placeholders": {
+      "snippet": {
+        "content": "$1"
+      }
+    }
+  },
+  "wiki_no_summary_available": {
+    "message": "No summary available."
+  },
+  "idle_prompt_1": {
+    "message": "I can tell you what that image is really showing."
+  },
+  "idle_prompt_2": {
+    "message": "Try asking me what's happening in this tab."
+  },
+  "idle_prompt_3": {
+    "message": "I notice things you might have missed."
+  },
+  "idle_prompt_4": {
+    "message": "I can describe this page better than you think!"
+  },
+  "idle_prompt_5": {
+    "message": "Curious about what you're seeing? I can help."
+  },
+  "idle_prompt_6": {
+    "message": "I read the web so you don't have to."
+  },
+  "context_menu_describe_image": {
+    "message": "Describe Image with Percepta"
+  }
+}

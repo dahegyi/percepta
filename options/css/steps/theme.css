@@ -1,0 +1,240 @@
+.color-schemes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  border: none;
+}
+
+.color-card {
+  position: relative;
+  display: flex;
+}
+
+.color-label {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  overflow: hidden;
+  border: 2px solid hsl(var(--border));
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: hsl(var(--card));
+  flex: 1;
+}
+
+.color-label:hover {
+  border-color: hsl(var(--ring));
+  box-shadow: 0 2px 8px hsl(var(--foreground) / 0.05);
+}
+
+[data-theme="high-contrast"] .color-label:hover {
+  background-color: hsl(var(--muted));
+}
+
+.color-preview {
+  flex: 1;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  min-height: 110px;
+  max-height: 110px;
+}
+
+.auto-preview {
+  background: linear-gradient(
+    135deg,
+    #f8fafc 0%,
+    #f8fafc 50%,
+    #1e293b 50%,
+    #0f172a 100%
+  );
+}
+
+.light-preview {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.dark-preview {
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+.high-contrast-preview {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+}
+
+.preview-bar {
+  width: 100%;
+  height: 0.375rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.auto-preview .preview-bar {
+  background: linear-gradient(
+    90deg,
+    #334155 0%,
+    #334155 50%,
+    #e2e8f0 50%,
+    #e2e8f0 100%
+  );
+}
+
+.light-preview .preview-bar {
+  background-color: #334155;
+}
+
+.dark-preview .preview-bar {
+  background-color: #e2e8f0;
+}
+
+.high-contrast-preview .preview-bar {
+  background-color: #ffffff;
+}
+
+.preview-content {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.preview-box {
+  flex: 1;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.auto-preview .preview-box:first-child {
+  background-color: rgba(51, 65, 85, 0.1);
+}
+
+.auto-preview .preview-box:last-child {
+  background-color: rgba(226, 232, 240, 0.2);
+}
+
+.light-preview .preview-box {
+  background-color: rgba(51, 65, 85, 0.1);
+}
+
+.dark-preview .preview-box {
+  background-color: rgba(226, 232, 240, 0.1);
+}
+
+.high-contrast-preview .preview-box {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.color-info {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background-color: hsl(var(--card));
+}
+
+.color-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: hsl(var(--foreground));
+}
+
+.color-description {
+  font-size: 0.8rem;
+  color: hsl(var(--foreground));
+}
+
+.theme-divider {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+.theme-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: hsl(var(--border));
+  z-index: 1;
+}
+
+.theme-divider-text {
+  background-color: hsl(var(--background));
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  color: hsl(var(--muted-foreground));
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.theme-auto-option {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.theme-auto-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.75rem 5rem;
+  transition: all 0.2s ease;
+  border-radius: var(--radius);
+}
+
+.theme-auto-text {
+  font-size: 0.9rem;
+  color: hsl(var(--foreground));
+  transition: all 0.2s ease;
+}
+
+.theme-auto-text.selected {
+  color: hsl(var(--foreground));
+}
+
+.theme-auto-check {
+  opacity: 0;
+  color: hsl(var(--primary));
+  transition: all 0.2s ease;
+}
+
+.theme-auto-check.selected {
+  opacity: 1;
+}
+
+.theme-auto-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#themeAuto.radio-input:not(:checked) + * {
+  border: 2px solid hsl(var(--border));
+}
+
+#themeAuto.radio-input:not(:checked):hover + * {
+  border: 2px solid hsl(var(--primary));
+}
+
+#themeAuto.radio-input:checked + * {
+  border: 2px solid hsl(var(--primary));
+  box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
+  background: none;
+}
+
+@media (max-width: 768px) {
+  .color-schemes {
+    grid-template-columns: 1fr;
+  }
+}

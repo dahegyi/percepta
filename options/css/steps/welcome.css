@@ -1,0 +1,139 @@
+.step-content .step-header.hiding {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.welcome-logo {
+  margin: 0 auto 1.5rem;
+  animation: scaleIn 0.5s ease-in-out;
+}
+
+.welcome-logo img {
+  max-height: 100px;
+  width: auto;
+}
+
+.welcome-logo svg {
+  filter: drop-shadow(0 4px 12px hsl(var(--foreground) / 0.1));
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#welcomeLanguageGroup {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 450px;
+}
+
+#welcomeLanguageGroup.hiding {
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+}
+
+#welcomeAIGroup {
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+  pointer-events: none;
+  margin: auto;
+}
+
+#welcomeAIGroup.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.ai-status-container {
+  background-color: hsl(var(--card));
+  border-radius: var(--radius);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.ai-status-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.ai-spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid hsl(var(--muted));
+  border-top: 3px solid hsl(var(--primary));
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ai-status-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.ai-status-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  margin: 0;
+}
+
+.ai-status-desc {
+  color: hsl(var(--muted-foreground));
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .ai-status-container {
+    padding: 1.5rem;
+  }
+
+  .ai-status-icon {
+    font-size: 2.5rem;
+  }
+
+  .ai-status-text {
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-logo,
+  #welcomeLanguageGroup,
+  #welcomeAIGroup {
+    animation: none;
+    transition: none;
+  }
+
+  #welcomeAIGroup.active {
+    opacity: 1;
+    transform: none;
+  }
+}

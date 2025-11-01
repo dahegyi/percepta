@@ -1,0 +1,104 @@
+{
+  "stepDetailLabel": { "message": "詳細" },
+  "stepAccessibilityLabel": { "message": "アクセシビリティ" },
+  "stepThemeLabel": { "message": "テーマ" },
+  "stepShortcutsLabel": { "message": "ショートカット" },
+  "selectLanguage": { "message": "言語を選択..." },
+  "stepDetailTitle": { "message": "説明の詳細度" },
+  "stepDetailDescription": {
+    "message": "Percepta の説明をどの程度詳しくしますか？"
+  },
+  "detailShortTitle": { "message": "簡潔" },
+  "detailShortDesc": { "message": "1行の要約" },
+  "detailMediumTitle": { "message": "標準" },
+  "detailMediumDesc": { "message": "バランスの取れた詳細" },
+  "detailLongTitle": { "message": "詳細" },
+  "detailLongDesc": { "message": "より深いビジュアル説明" },
+  "stepThemeTitle": { "message": "テーマ設定" },
+  "stepThemeDescription": {
+    "message": "お好みの外観を選択してください。"
+  },
+  "themeDividerText": { "message": "または" },
+  "themeAutoTitle": { "message": "デバイス設定を使用" },
+  "themeLightTitle": { "message": "ライト" },
+  "themeLightDesc": { "message": "明るい背景、暗い文字" },
+  "themeDarkTitle": { "message": "ダーク" },
+  "themeDarkDesc": { "message": "暗い背景、明るい文字" },
+  "themeHighContrastTitle": { "message": "ハイコントラスト" },
+  "themeHighContrastDesc": {
+    "message": "視認性を高める最大コントラスト"
+  },
+  "stepAccessibilityTitle": { "message": "アクセシビリティ設定" },
+  "stepAccessibilityDescription": {
+    "message": "見やすい文字サイズを選択してください。"
+  },
+  "fontSizeSmallerLabel": { "message": "極小" },
+  "fontSizeSmallLabel": { "message": "小" },
+  "fontSizeNormalLabel": { "message": "標準" },
+  "fontSizeLargeLabel": { "message": "大" },
+  "fontSizeLargerLabel": { "message": "特大" },
+  "stepShortcutsTitle": { "message": "キーボードショートカット" },
+  "stepShortcutsDescription": {
+    "message": "キーボードショートカットを使用してPerceptaをすばやく起動します。"
+  },
+  "shortcutActivateLabel": { "message": "拡張機能を起動" },
+  "shortcutChangeInfo": {
+    "message": "このショートカットを変更するには、次のページにアクセスしてください:"
+  },
+  "continue": { "message": "続行" },
+  "back": { "message": "戻る" },
+  "finish": { "message": "完了" },
+  "setupCompleteAnnouncement": {
+    "message": "セットアップが完了しました。Percepta を利用できます。設定内容は保存されています。"
+  },
+  "welcomeTitle": { "message": "Percepta へようこそ" },
+  "welcomeTagline": { "message": "セットアップを開始します。" },
+  "welcomeLanguageLabel": { "message": "言語を選択" },
+  "welcomeLogoAlt": { "message": "Percepta ロゴ" },
+
+  "aiCheckingTitle": { "message": "AIの利用状況を確認中" },
+  "aiCheckingDesc": { "message": "少々お待ちください..." },
+  "aiAvailableTitle": { "message": "準備完了" },
+  "aiAvailableDesc": {
+    "message": "AIモデルの準備が整いました。設定を開始します。"
+  },
+  "aiDownloadingTitle": { "message": "モデルをダウンロード中" },
+  "aiDownloadingDesc": { "message": "数分かかる場合があります。" },
+  "aiUnavailableTitle": { "message": "モデルが利用できません" },
+  "aiUnavailableDesc": {
+    "message": "Percepta は Chrome 138 以降のオフライン Gemini Nano でのみ動作します。"
+  },
+  "completionTitle": { "message": "Percepta の準備が整いました" },
+  "completionMessage": {
+    "message": "設定は拡張機能メニューからいつでも変更できます。"
+  },
+  "launchPercepta": { "message": "Percepta を起動" },
+  "startSetupAgain": { "message": "セットアップをやり直す" },
+  "ariaLabelContinueToDetail": { "message": "説明の詳細設定へ進む" },
+  "ariaLabelContinueToTheme": { "message": "テーマ選択へ進む" },
+  "ariaLabelContinueToAccessibility": {
+    "message": "アクセシビリティ設定へ進む"
+  },
+  "ariaLabelContinueToShortcuts": {
+    "message": "ショートカット設定へ進む"
+  },
+  "ariaLabelBackToDetail": { "message": "説明の詳細設定に戻る" },
+  "ariaLabelBackToTheme": { "message": "テーマ選択に戻る" },
+  "ariaLabelBackToAccessibility": {
+    "message": "アクセシビリティ設定に戻る"
+  },
+  "ariaLabelFinishSetup": { "message": "セットアップを完了" },
+  "ariaLabelFontSizeSelection": { "message": "文字サイズの選択" },
+  "ariaLabelContentPreference": { "message": "コンテンツ設定の選択" },
+  "ariaLabelSetupProgress": { "message": "セットアップの進行状況" },
+  "ariaLabelStepDetail": { "message": "ステップ1: 詳細設定" },
+  "ariaLabelStepTheme": { "message": "ステップ2: テーマ設定" },
+  "ariaLabelStepAccessibility": {
+    "message": "ステップ3: アクセシビリティ設定"
+  },
+  "ariaLabelStepShortcuts": { "message": "ステップ4: ショートカット設定" },
+  "stepTitleDetail": { "message": "ステップ1/4: 説明の詳細設定" },
+  "stepTitleTheme": { "message": "ステップ2/4: テーマ設定" },
+  "stepTitleAccessibility": { "message": "ステップ3/4: アクセシビリティ設定" },
+  "stepTitleShortcuts": { "message": "ステップ4/4: ショートカット設定" }
+}

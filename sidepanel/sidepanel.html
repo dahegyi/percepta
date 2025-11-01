@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percepta</title>
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <div
+      class="panel"
+      role="complementary"
+      data-i18n-aria-label="sidepanel_aria_label"
+    >
+      <div class="conversation-container">
+        <p class="ai-unavailable-notice" id="aiUnavailableNotice" hidden>
+          <span data-i18n="ai_unavailable"></span>
+        </p>
+        <div
+          class="conversation"
+          data-i18n-aria-label="sidepanel_conversation_label"
+        ></div>
+        <div class="typing-indicator" style="display: none" aria-hidden="true">
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+          <div class="typing-dot"></div>
+        </div>
+      </div>
+      <div class="input-container">
+        <form class="input-form" id="inputForm">
+          <div class="input-wrapper">
+            <textarea
+              class="input-field"
+              id="inputField"
+              data-i18n-placeholder="sidepanel_input_placeholder_no_conversation"
+              data-i18n-aria-label="sidepanel_input_label"
+              rows="1"
+            ></textarea>
+            <button
+              type="submit"
+              class="btn-send"
+              id="sendBtn"
+              data-i18n-aria-label="sidepanel_send_button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="sidepanel.js"></script>
+  </body>
+</html>
